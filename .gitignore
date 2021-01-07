@@ -1,1 +1,3 @@
 /venv_bowling
+.vscode
+.pytest_cache
