@@ -1,5 +1,5 @@
 
-from domain.src.bowling import Bowling
+from src.bowling import Bowling
 import pytest
 
 def test_all_strikes():
