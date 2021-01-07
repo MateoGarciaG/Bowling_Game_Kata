@@ -2,6 +2,9 @@
 
 class Bowling():
     
+    """Class Bowling: This class let us obtain total_score of a Bowling's game
+    """
+    
     def __init__(self, score):
         
         self.score = score
