@@ -1,1 +1,28 @@
-<mxfile host="app.diagrams.net" modified="2021-01-21T13:16:41.077Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="eBpPjSWHZjrzu4g2QYen" version="14.2.5" type="device"><diagram id="L26EetaDWAB7zf-NUEss" name="Page-1">7VdNc9owEP01zLSHZvBXgCM4SXtIOpnSps0po1iLrSJ7XVkUyK/vypYwxklLOsktMwzDPq1W2n1v12YQxPnmo2JldoUc5MAf8s0gOBv4/sSP6NsA2wYIx+MGSJXgDeS1wFw8gAWHFl0JDlXHUSNKLcoumGBRQKI7GFMK1123BcruqSVLoQfMEyb76HfBddagY3/U4p9ApJk72TudNCs5c842kypjHNd7UHA+CGKFqJtf+SYGaWrn6tLsu3hidXcxBYU+ZsP0ZzW8uciyZPs59n+Nlg9hPvtgo/xmcmUTnuFaiiKdJ6ggZorby+utq0i1FrlkBVmzBRZ6bleGZCeZkPySbXFlblRpliydNctQiQfyZ5KWPAJoWWlLuH9qogkpY5SoCCiwPqDdNDfB7DEKKtp27TL3DqArtuk4XrJKuwuilKysxH19ZbMxZyoVxQy1xtw62ZKA0rB5stbejkFSPmAOWm3JxW4IJpZ0q/ogtPa61ZDnsGxfPw5kVrfpLnZLLf2w7D6Dab/HdAp6x/K79wPiwA+8Yc2MEkvoQib3DpJkkCxvmKSmNUE6a1hCcaFY3kXpvK9oqHT+B8KicuvmdFzCgRAe0QYdnRZkSliYbYYvQX07tbDGsrl3Qmq+rH3Owhb5YmtuIKS9C1n3ZiY4h8JIh26q2f1O2iWKQtecRDP6EEvx8CQaRHTxmGyvtelj3JWOsaBcmKglAyTCNRghHqevp7u1LzorMlPpozTmha+ksainsWlZvg2QFxgg3umRA2T0WvNj1OMWNpCsNNzdN0+MTq8rkMj4XakwpTnw1uz/0ezRizR7+Fq9Punp4VsFPZqh4FPzFkaWeShQQQixPetRejPOqgy47aVM5665YSP0D0PHSTgaW/u2tifjwNpnrk1rY7tnXIMSlCYohxWUchMucubt/lobqrZcrCYf4L13xIM+ppxxpRL4S71s/9DMoufg82f8Ps9uFlCTMS1+d+/2GNE23LWR9d6MGR+8pHgHs6PJye7af7M8CBSF/wjUJN0LVOtul+NjUiSzfUFu3Nt/GcH5Hw==</diagram></mxfile>
+<mxfile host="65bd71144e" modified="2021-01-25T11:31:18.192Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.52.1 Chrome/83.0.4103.122 Electron/9.3.5 Safari/537.36" etag="MlVuzcjJ2PmsUjuk0vJv" version="13.10.0" type="embed">
+    <diagram id="L26EetaDWAB7zf-NUEss" name="Page-1">
+        <mxGraphModel dx="314" dy="605" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="Ajs0VFhhcyNC2q7kz4mB-1" value="BowlingScoreCard" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="340" width="140" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ajs0VFhhcyNC2q7kz4mB-2" value="getScoreCard()&#10;strike()&#10;spare()&#10;checkValidScore()&#10;openFrame()&#10;getScoreGame()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ajs0VFhhcyNC2q7kz4mB-1" vertex="1">
+                    <mxGeometry y="26" width="140" height="114" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ajs0VFhhcyNC2q7kz4mB-5" value="App" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="160" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ajs0VFhhcyNC2q7kz4mB-7" value="execute_bowling()&#10;reload_program()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Ajs0VFhhcyNC2q7kz4mB-5" vertex="1">
+                    <mxGeometry y="26" width="140" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ajs0VFhhcyNC2q7kz4mB-9" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.478;exitY=0.983;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Ajs0VFhhcyNC2q7kz4mB-7" target="Ajs0VFhhcyNC2q7kz4mB-1" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="380" y="310" as="sourcePoint"/>
+                        <mxPoint x="540" y="310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

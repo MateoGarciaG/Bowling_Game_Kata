@@ -2,7 +2,7 @@
 
 class BowlingScoreCard():
     
-    """Class Bowling: This class let us obtain self.total_score of a Bowling's game
+    """Class BowlingScoreCard: This class let us obtain self.total_score of a Bowling's game
     """
     
     def __init__(self, score):
@@ -11,7 +11,10 @@ class BowlingScoreCard():
         self.valid_score = False
         self.total_score = 0
         self.cont_frame = 0
-        self.actual_char = self.score[0]
+        self.actual_trie = self.score[0]
+        
+    def getScoreCard(self):
+        return self.score
         
     def strike(self):
         
@@ -39,53 +42,59 @@ class BowlingScoreCard():
         self.cont_frame += 1
         
     def spare(self):
-        #* Al ser char = /, necesitamos saber el valor de este /, por lo cual lo restamos con el anterior caracter y menos 10. Porque son 10 bolos
-        rest = 10 - int(self.actual_char)
+        #* Al ser trie = /, necesitamos saber el valor de este /, por lo cual lo restamos con el anterior caracter y menos 10. Porque son 10 bolos
+        rest = 10 - int(self.actual_trie)
         #* Si / es el ultimo caracter
         if self.cont_frame == len(self.score)-1:
             if self.score[self.cont_frame] == 'X':
                 pass
         #* Si el siguiente caracter a partir de / es una X
         elif self.score[self.cont_frame+1] == 'X':
-            self.total_score += int(self.actual_char) + rest + 10
+            self.total_score += int(self.actual_trie) + rest + 10
         else:
             #* Si no, al no ser un strike, suma al total el siguiente caracter.
-            self.total_score += int(self.actual_char) + rest + int(self.score[self.cont_frame+1])
+            self.total_score += int(self.actual_trie) + rest + int(self.score[self.cont_frame+1])
             
-    def check_valid_score(self):
+    def checkValidScore(self):
         if self.score[0] == '/':
             return self.valid_score
         elif 'X/' in self.score:
             return self.valid_score
         else:
             self.valid_score = True
-            
-            
-    def get_total_score(self):
+    
+    def openFrame(self, trie):
         
-        self.check_valid_score()
+        #* Si self.cont_frame % 2 == 1, quiere decir que self.actual_trie y trie forman un frame y este frame no tiene X o /. Por lo cual simplemente se suman al total, ambos números
+        if self.cont_frame % 2 == 1:
+            if self.actual_trie != 'X':
+                self.total_score += int(self.actual_trie) + int(trie)
+            
+    def getScoreGame(self):
+        
+        self.checkValidScore()
         
         self.score = self.score.replace('-', '0')
         print(self.score)
         
         # self.total_score = 0
-        # self.actual_char = self.score[0]
+        # self.actual_trie = self.score[0]
         # self.cont_frame = 0
-        for char in self.score:
+        for trie in self.score:
 
-            if char == '/':
+            if trie == '/':
                 self.spare()
-            elif char == 'X':
+            elif trie == 'X':
                 self.strike()
 
             else:
-                
-                #* Si self.cont_frame % 2 == 1, quiere decir que self.actual_char y char forman un frame y este frame no tiene X o /. Por lo cual simplemente se suman al total, ambos números
-                if self.cont_frame % 2 == 1:
-                    if self.actual_char != 'X':
-                        self.total_score += int(self.actual_char) + int(char)
+                self.openFrame(trie)
+                # #* Si self.cont_frame % 2 == 1, quiere decir que self.actual_trie y trie forman un frame y este frame no tiene X o /. Por lo cual simplemente se suman al total, ambos números
+                # if self.cont_frame % 2 == 1:
+                #     if self.actual_trie != 'X':
+                #         self.total_score += int(self.actual_trie) + int(trie)
                     
-            self.actual_char = char
+            self.actual_trie = trie
             self.cont_frame += 1
             
         print(self.total_score)

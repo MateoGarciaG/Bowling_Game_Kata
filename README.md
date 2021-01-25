@@ -28,6 +28,8 @@ This repository is focused on creation of the Bowling Game's kata. This Kata con
 Tenpin bowling is a type of bowling in which a bowler rolls a bowling ball down a wood or synthetic lane toward ten pins 
 ### Frames
 Unit measuring the number of turns a bowler has in a game. There are 10 frames in a bowling game and bowlers get two throws, or attempts, to knock over the pins during each frame.
+### Tries
+Each Frame consist of two Tries
 ### Pins
 Are the target of the bowling ball in various bowling games
 ### Game Score
@@ -38,3 +40,9 @@ Knocking down the remaining pins on the second throw.
 Knocking over all 10 pins on the first throw.
 ### Open Frame
 A turn in which the bowler fails to get a strike or spare.
+
+# Modelo de Dominio
+![Imagen Modelo de Dominio](DDD/Model_DDD_bowling_kata.png)
+
+# Diagrama UML Bowling
+![Imagen Modelo de Dominio](DDD/UML/UML_Diagram_bowling_kata.png)
